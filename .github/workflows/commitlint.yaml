@@ -1,0 +1,39 @@
+name: Commit Lint
+
+on:
+  pull_request:
+    branches-ignore:
+      - dependabot/*
+  push:
+    branches-ignore:
+      - dependabot/*
+
+jobs:
+  commit-lint:
+    name: Commit Lint
+
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set Up PNPM
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8
+
+      - name: Set Up NodeJS
+        uses: actions/setup-node@v4
+        with:
+          cache: pnpm
+          node-version: lts/*
+
+      - name: Install Dependencies
+        run: pnpm i
+
+      - name: Lint
+        env:
+          COMMIT_MESSAGE: ${{ github.event.head_commit.message }}
+        run: echo $COMMIT_MESSAGE | pnpm commitlint

@@ -1,0 +1,9 @@
+.czrc
+.ecrc
+.editorconfig
+.gitattributes
+.gitignore
+.gitmodules
+.prettierignore
+*.md
+pnpm-lock.yaml
