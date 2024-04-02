@@ -1,5 +1,5 @@
-import { defineFlatConfig } from 'eslint-define-config';
 import { compatibility } from '@archoleat/eslint-flat-compatibility';
+import { defineFlatConfig } from 'eslint-define-config';
 
 import globals from 'globals';
 import typescriptParser from '@typescript-eslint/parser';
