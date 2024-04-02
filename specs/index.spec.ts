@@ -2,8 +2,8 @@ import { describe, expect, test } from 'vitest';
 
 import { compatibility } from '../index.ts';
 
-describe('ESLint flat compatibility', () => {
-  test('function', () => {
+describe('ESLint Flat Config', () => {
+  test('compatibility', () => {
     expect(
       compatibility(
         'airbnb-typescript/base',
