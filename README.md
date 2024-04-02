@@ -37,6 +37,9 @@ yarn add -D @archoleat/eslint-flat-compatibility
 
 ## Usage
 
+> \[!WARNING]
+> Only supports compatibility with extends!
+
 ### Before
 
 ```js
@@ -59,11 +62,37 @@ export default defineFlatConfig([
 // ...
 ```
 
+or
+
+```js
+import { path } from 'node:path';
+import { fileURLToPath } from 'url';
+
+import { defineFlatConfig } from 'eslint-define-config';
+import { FlatCompat } from '@eslint/eslintrc';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const compat = new FlatCompat({
+  baseDirectory: __dirname,
+  resolvePluginsRelativeTo: __dirname,
+});
+
+export default defineFlatConfig([
+  ...compat.extends(
+    'airbnb-typescript/base',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+  ),
+// ...
+```
+
 ## After
 
 ```js
-import { defineFlatConfig } from 'eslint-define-config';
 import { compatibility } from '@archoleat/eslint-flat-compatibility';
+import { defineFlatConfig } from 'eslint-define-config';
 
 export default defineFlatConfig([
   ...compatibility(
