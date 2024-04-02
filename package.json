@@ -1,6 +1,6 @@
 {
-  "name": "@archoleat/repo-template",
-  "description": "Repository template",
+  "name": "@archoleat/eslint-flat-compatibility",
+  "description": "Function for compatibility with ESLint flat config",
   "version": "1.0.0",
   "license": "MIT",
   "author": {
@@ -8,16 +8,22 @@
     "name": "Archoleat",
     "url": "https://github.com/archoleat"
   },
-  "homepage": "https://github.com/archoleat/repo-template#readme",
+  "homepage": "https://github.com/archoleat/eslint-flat-compatibility#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/archoleat/repo-template.git"
+    "url": "git+https://github.com/archoleat/eslint-flat-compatibility.git"
   },
   "bugs": {
-    "url": "https://github.com/archoleat/repo-template/issues"
+    "url": "https://github.com/archoleat/eslint-flat-compatibility/issues"
   },
   "keywords": [
-    "repo-template"
+    "compatibility",
+    "config",
+    "eslint-config",
+    "eslint-flat-compatibility",
+    "eslint-flat-config",
+    "eslint",
+    "flat"
   ],
   "packageManager": "pnpm@8.15.5",
   "engines": {
@@ -30,18 +36,17 @@
     "pnpm": "8.15.5"
   },
   "type": "module",
-  "types": "index.d.ts",
   "exports": {
     ".": "./index.js"
   },
   "files": [
-    "index.d.ts",
     "index.js"
   ],
   "scripts": {
     "init": "pnpm i && husky && git submodule update",
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
+    "build": "rollup -c",
     "release": "semantic-release",
     "lint:editorconfig": "editorconfig-checker",
     "lint:formatting": "prettier . --check",
@@ -50,15 +55,22 @@
     "prettify": "prettier . --write",
     "commit": "cz"
   },
+  "dependencies": {
+    "@eslint/eslintrc": "^3.0.2",
+    "@types/eslint": "^8.56.7",
+    "@types/eslint__eslintrc": "^2.1.1"
+  },
   "devDependencies": {
     "@archoleat/commitlint-define-config": "^1.0.2",
+    "@archoleat/eslint-flat-compatibility": "file:",
     "@archoleat/semantic-release-define-config": "^1.1.1",
     "@commitlint/cli": "^19.2.1",
     "@commitlint/config-conventional": "^19.1.0",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@typescript-eslint/eslint-plugin": "^7.4.0",
-    "@typescript-eslint/parser": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
     "@vitest/coverage-v8": "^1.4.0",
     "conventional-changelog-conventionalcommits": "^7.0.2",
     "cz-conventional-changelog": "^3.3.0",
@@ -78,6 +90,8 @@
     "remark-preset-lint-consistent": "^5.1.2",
     "remark-preset-lint-markdown-style-guide": "^5.1.3",
     "remark-preset-lint-recommended": "^6.1.3",
+    "rollup": "^4.13.2",
+    "rollup-plugin-esbuild": "^6.1.1",
     "semantic-release": "^23.0.6",
     "typescript": "^5.4.3",
     "vitest": "^1.4.0"
