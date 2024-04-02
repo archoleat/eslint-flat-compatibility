@@ -1,11 +1,15 @@
 import { describe, expect, test } from 'vitest';
 
-import { message } from '../index.ts';
+import { compatibility } from '../index.ts';
 
-describe('Message', () => {
-  test('Hello!', async () => {
-    return message('Hello!').then((argument) => {
-      expect(argument).equal('Hello!');
-    });
+describe('ESLint Flat Config', () => {
+  test('compatibility', () => {
+    expect(
+      compatibility(
+        'airbnb-typescript/base',
+        'plugin:import/recommended',
+        'plugin:import/typescript',
+      ),
+    ).not.equal('');
   });
 });

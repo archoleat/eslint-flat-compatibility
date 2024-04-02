@@ -1,5 +1,12 @@
-const message = async (string: string) => {
-  return string;
+import { resolve } from 'node:path';
+
+import { FlatCompat } from '@eslint/eslintrc';
+
+const compatibility = (...extend: string[]) => {
+  return new FlatCompat({
+    baseDirectory: resolve(),
+    resolvePluginsRelativeTo: resolve(),
+  }).extends(...extend);
 };
 
-export { message };
+export { compatibility };
