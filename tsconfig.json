@@ -23,5 +23,5 @@
     "target": "ESNext",
     "types": ["eslint", "vitest"]
   },
-  "include": ["index.ts"]
+  "include": ["src/**/*.ts"]
 }
