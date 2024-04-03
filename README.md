@@ -37,9 +37,6 @@ yarn add -D @archoleat/eslint-flat-compatibility
 
 ## Usage
 
-> \[!WARNING]
-> Only supports compatibility with extends!
-
 ### Before
 
 ```js
@@ -91,16 +88,55 @@ export default defineFlatConfig([
 ## After
 
 ```js
-import { compatibility } from '@archoleat/eslint-flat-compatibility';
+import { extend } from '@archoleat/eslint-flat-compatibility';
 import { defineFlatConfig } from 'eslint-define-config';
 
 export default defineFlatConfig([
-  ...compatibility(
+  // mimic extends
+  ...extend(
     'airbnb-typescript/base',
     'plugin:import/recommended',
     'plugin:import/typescript',
   ),
 // ...
+```
+
+Also available:
+
+```js
+import { config, env, extend, plugins } from '@archoleat/eslint-flat-compatibility';
+import { defineFlatConfig } from 'eslint-define-config';
+
+export default defineFlatConfig([
+  // mimic extends
+  ...extend(
+    'airbnb-typescript/base',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
+  ),
+
+  // mimic env
+  ...env({
+      es2020: true,
+      node: true
+  }),
+
+  // mimic plugins
+  ...plugins('airbnb', 'react'),
+
+  // translate an entire config
+  ...config({
+    extends: ['airbnb/base'],
+    plugins: ['airbnb', 'unicorn'],
+    env: {
+      es2020: true,
+      node: true
+    },
+    rules: {
+      semi: 'error'
+    }
+  }),
+]);
 ```
 
 ## Contributing

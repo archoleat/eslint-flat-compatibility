@@ -1,11 +1,11 @@
 import { describe, expect, test } from 'vitest';
 
-import { compatibility } from '../index.ts';
+import { extend } from '../src/methods/extends.ts';
 
 describe('ESLint Flat Config', () => {
-  test('compatibility', () => {
+  test('extends', () => {
     expect(
-      compatibility(
+      extend(
         'airbnb-typescript/base',
         'plugin:import/recommended',
         'plugin:import/typescript',
