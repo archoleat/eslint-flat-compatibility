@@ -1,10 +1,19 @@
-.czrc
-.ecrc
-.editorconfig
-.gitattributes
-.gitignore
-.gitmodules
-.prettierignore
+# folders
+.husky
+
+# files
 *.md
 pnpm-lock.yaml
 index.js
+
+# *rc
+.czrc
+.ecrc
+
+# configs
+.editorconfig
+.gitattributes
+
+# ignores
+.gitignore
+.prettierignore
