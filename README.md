@@ -62,8 +62,8 @@ export default defineFlatConfig([
 or
 
 ```js
-import { path } from 'node:path';
 import { fileURLToPath } from 'url';
+import path from 'path';
 
 import { defineFlatConfig } from 'eslint-define-config';
 import { FlatCompat } from '@eslint/eslintrc';
@@ -88,8 +88,8 @@ export default defineFlatConfig([
 ## After
 
 ```js
-import { extend } from '@archoleat/eslint-flat-compatibility';
 import { defineFlatConfig } from 'eslint-define-config';
+import { extend } from '@archoleat/eslint-flat-compatibility';
 
 export default defineFlatConfig([
   // mimic extends
@@ -126,12 +126,12 @@ export default defineFlatConfig([
 
   // translate an entire config
   ...config({
-    extends: ['airbnb/base'],
-    plugins: ['airbnb', 'unicorn'],
     env: {
       es2020: true,
       node: true
     },
+    extends: ['airbnb/base'],
+    plugins: ['airbnb', 'unicorn'],
     rules: {
       semi: 'error'
     }
