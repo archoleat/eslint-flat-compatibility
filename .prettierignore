@@ -3,8 +3,9 @@
 
 # files
 *.md
-pnpm-lock.yaml
+index.d.ts
 index.js
+pnpm-lock.yaml
 
 # *rc
 .czrc
