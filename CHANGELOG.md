@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.2...v1.1.3) (2024-04-04)
+
+
+### Code Refactoring
+
+* **package:** add types ([#18](https://github.com/archoleat/eslint-flat-compatibility/issues/18)) ([2172b46](https://github.com/archoleat/eslint-flat-compatibility/commit/2172b46a9ef6bd50053697f27a2ee3ffba4a84aa))
+
 ## [1.1.2](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.1...v1.1.2) (2024-04-04)
 
 
