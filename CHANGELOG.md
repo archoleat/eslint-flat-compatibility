@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.2](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.1...v1.1.2) (2024-04-04)
+
+
+### Code Refactoring
+
+* **types:** add types for `env` and `config` ([#16](https://github.com/archoleat/eslint-flat-compatibility/issues/16)) ([e622533](https://github.com/archoleat/eslint-flat-compatibility/commit/e6225333e3672e8dd284fddbefe00f13fc9cdc5b))
+* small changes ([#17](https://github.com/archoleat/eslint-flat-compatibility/issues/17)) ([b978b18](https://github.com/archoleat/eslint-flat-compatibility/commit/b978b18ffa3c5e78aab626d4565e96bed2791c91))
+
 ## [1.1.1](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.0...v1.1.1) (2024-04-03)
 
 
