@@ -92,7 +92,7 @@ import { defineFlatConfig } from 'eslint-define-config';
 import { extend } from '@archoleat/eslint-flat-compatibility';
 
 export default defineFlatConfig([
-  // mimic extends
+  // Mimic extends
   ...extend(
     'airbnb-typescript/base',
     'plugin:import/recommended',
@@ -108,33 +108,35 @@ import { config, env, extend, plugins } from '@archoleat/eslint-flat-compatibili
 import { defineFlatConfig } from 'eslint-define-config';
 
 export default defineFlatConfig([
-  // mimic extends
+  // Mimic extends
   ...extend(
     'airbnb-typescript/base',
     'plugin:import/recommended',
     'plugin:import/typescript',
   ),
 
-  // mimic env
+  // Mimic env
+  // Types available
   ...env({
-      es2020: true,
-      node: true
+    es2020: true,
+    node: true,
   }),
 
-  // mimic plugins
+  // Mimic plugins
   ...plugins('airbnb', 'react'),
 
-  // translate an entire config
+  // Translate an entire config
+  // Types available
   ...config({
     env: {
       es2020: true,
-      node: true
+      node: true,
     },
     extends: ['airbnb/base'],
     plugins: ['airbnb', 'unicorn'],
     rules: {
-      semi: 'error'
-    }
+      semi: 'error',
+    },
   }),
 ]);
 ```
