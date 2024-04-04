@@ -36,10 +36,12 @@
     "pnpm": "8.15.6"
   },
   "type": "module",
+  "types": "index.d.ts",
   "exports": {
     ".": "./index.js"
   },
   "files": [
+    "index.d.ts",
     "index.js"
   ],
   "scripts": {
