@@ -1,4 +1,4 @@
-# Archoleat Repo Template
+# ESLint Flat Compatibility
 
 ![NPM Version](https://img.shields.io/npm/v/%40archoleat%2Feslint-flat-compatibility)
 ![NPM Downloads](https://img.shields.io/npm/dm/%40archoleat%2Feslint-flat-compatibility)
