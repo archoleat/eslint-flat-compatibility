@@ -1,8 +1,6 @@
 import { compatibility } from '../utils/compatibility.ts';
 
 /**  @return mimic plugins */
-const plugins = (...array: string[]) => {
-  return compatibility.plugins(...array);
-};
+const plugins = (...array: string[]) => compatibility.plugins(...array);
 
 export { plugins };
