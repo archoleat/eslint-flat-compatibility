@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.4...v1.1.5) (2024-04-08)
+
+
+### Code Refactoring
+
+* **methods:** remove extra braces ([#28](https://github.com/archoleat/eslint-flat-compatibility/issues/28)) ([c0d813e](https://github.com/archoleat/eslint-flat-compatibility/commit/c0d813e875c1b79fcaaf29e8d76fea1843b06446))
+
 ## [1.1.4](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.3...v1.1.4) (2024-04-08)
 
 
