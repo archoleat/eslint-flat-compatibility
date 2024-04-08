@@ -1,9 +1,9 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test as spec } from 'vitest';
 
 import { environments } from '../src/methods/environments.ts';
 
 describe('ESLint Flat Config', () => {
-  test('environments', () => {
+  spec('environments', () => {
     expect(
       environments({
         es2020: true,
