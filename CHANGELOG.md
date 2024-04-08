@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.4](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.3...v1.1.4) (2024-04-08)
+
+
+### Code Refactoring
+
+* **eslint:** add `ecmaVersion` and `sourceType` ([#19](https://github.com/archoleat/eslint-flat-compatibility/issues/19)) ([c0a744b](https://github.com/archoleat/eslint-flat-compatibility/commit/c0a744be272ad1ec0b5bc63dfc61c1d5a3c6b8c6))
+* **eslint:** add new rules ([#26](https://github.com/archoleat/eslint-flat-compatibility/issues/26)) ([30c8ac4](https://github.com/archoleat/eslint-flat-compatibility/commit/30c8ac45f12a64d354dea8cdd2c41e8cce78c3a7))
+
+
+### Documentation
+
+* **readme:** change title ([#20](https://github.com/archoleat/eslint-flat-compatibility/issues/20)) ([8026243](https://github.com/archoleat/eslint-flat-compatibility/commit/802624340c833a03e149042ef5c3bc3b6faeac46))
+
 ## [1.1.3](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.2...v1.1.3) (2024-04-04)
 
 
