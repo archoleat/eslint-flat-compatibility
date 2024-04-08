@@ -1,9 +1,9 @@
-import { describe, expect, test } from 'vitest';
+import { describe, expect, test as spec } from 'vitest';
 
 import { extend } from '../src/methods/extends.ts';
 
 describe('ESLint Flat Config', () => {
-  test('extends', () => {
+  spec('extends', () => {
     expect(
       extend(
         'airbnb-typescript/base',
