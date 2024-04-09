@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.6](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.5...v1.1.6) (2024-04-09)
+
+
+### Code Refactoring
+
+* **eslint:** rename unicorn import ([#30](https://github.com/archoleat/eslint-flat-compatibility/issues/30)) ([e724bb4](https://github.com/archoleat/eslint-flat-compatibility/commit/e724bb4af3d9727418ac27e6000d8a6150c41952))
+
 ## [1.1.5](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.4...v1.1.5) (2024-04-08)
 
 
