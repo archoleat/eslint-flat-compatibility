@@ -1,6 +1,6 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { environments } from '../src/methods/environments.ts';
+import { environments } from '#environments';
 
 describe('ESLint Flat Config', () => {
   spec('environments', () => {

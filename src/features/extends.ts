@@ -1,4 +1,4 @@
-import { compatibility } from '../utils/compatibility.ts';
+import { compatibility } from '#compatibility';
 
 /** @return mimic extends */
 const extend = (...array: string[]) => compatibility.extends(...array);
