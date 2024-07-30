@@ -24,24 +24,12 @@ export default defineConfig([
       alias({
         entries: [
           {
-            find: '#compatibility',
-            replacement: `src/shared/compatibility.ts`,
+            find: '#features',
+            replacement: `src/features/index.ts`,
           },
           {
-            find: '#config',
-            replacement: `${features}/config.ts`,
-          },
-          {
-            find: '#environments',
-            replacement: `${features}/environments.ts`,
-          },
-          {
-            find: '#extends',
-            replacement: `${features}/extends.ts`,
-          },
-          {
-            find: '#plugins',
-            replacement: `${features}/plugins.ts`,
+            find: '#shared',
+            replacement: `src/shared/index.ts`,
           },
         ],
       }),
