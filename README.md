@@ -2,6 +2,8 @@
 
 ![NPM Version](https://img.shields.io/npm/v/%40archoleat%2Feslint-flat-compatibility)
 ![NPM Downloads](https://img.shields.io/npm/dm/%40archoleat%2Feslint-flat-compatibility)
+![ESM](https://img.shields.io/badge/ESM-fe0)
+![Provenance](https://img.shields.io/badge/Provenance-fo0)
 ![CodeQL](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/codeql.yaml?label=CodeQL)
 ![Specs](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/spec.yaml?label=Specs)
 ![Commitlint](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/commitlint.yaml?label=Commitlint)
@@ -9,7 +11,6 @@
 ![Prettier](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/prettier.yaml?label=Prettier)
 ![ESLint](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/eslint.yaml?label=ESLint)
 ![Markdown](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/markdown.yaml?label=Markdown)
-![ESM Only](https://img.shields.io/badge/ESM-only-gray?labelColor=fe0)
 
 ## Table of Contents
 
