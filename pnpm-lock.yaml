@@ -25,8 +25,8 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7
       '@archoleat/eslint-flat-compatibility':
-        specifier: 'file:'
-        version: file:(eslint@8.57.0)
+        specifier: ^1.1.6
+        version: 1.1.6
       '@archoleat/semantic-release-define-config':
         specifier: ^1.1.4
         version: 1.1.4
@@ -143,11 +143,9 @@ packages:
     resolution: {integrity: sha512-2ekyjrJFJDk2t+13O65mmlekiZypGDnh7VXSq6fk4X9jExx4LQ7BgQSEEMS4DpM0ce3vjtAgQejEHyS9bzDyWA==}
     engines: {node: '>=20.0.0', npm: '>=10.0.0', pnpm: '>=8.0.0'}
 
-  '@archoleat/eslint-flat-compatibility@file:':
-    resolution: {directory: '', type: directory}
-    engines: {node: '>=20.0.0', pnpm: '>=9.0.0'}
-    peerDependencies:
-      eslint: ^9.0.0
+  '@archoleat/eslint-flat-compatibility@1.1.6':
+    resolution: {integrity: sha512-gu8PQv6hWh2DEm2FONtAPDvv1odZXCADshCyvouYzFNscEgMLW0zwbfv6d6pAlsk7uY9+V05R/tz0qv0Sy4mzg==}
+    engines: {node: '>=20.0.0', npm: '>=10.0.0', pnpm: '>=8.0.0'}
 
   '@archoleat/semantic-release-define-config@1.1.4':
     resolution: {integrity: sha512-DhUpQvYZKunC2Oeoqpv6fQwTm2ik0HNkKnuHBSLNAM+t6tbDXYvM3fgmyhEx0qvE7B+OPWw9Mg5uK7yCCRNdrA==}
@@ -731,6 +729,9 @@ packages:
 
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
+
+  '@types/eslint@8.56.11':
+    resolution: {integrity: sha512-sVBpJMf7UPo/wGecYOpk2aQya2VUGeHhe38WG7/mN5FufNSubf5VT9Uh9Uyp8/eLJpu1/tuhJ/qTo4mhSB4V4Q==}
 
   '@types/eslint@9.6.0':
     resolution: {integrity: sha512-gi6WQJ7cHRgZxtkQEoyHMppPjq9Kxo5Tjn2prSKDSmZrCz8TZ3jSRCeTJm+WoM+oB0WG37bRqLzaaU3q7JypGg==}
@@ -3970,12 +3971,11 @@ snapshots:
     dependencies:
       '@commitlint/types': 19.0.3
 
-  '@archoleat/eslint-flat-compatibility@file:(eslint@8.57.0)':
+  '@archoleat/eslint-flat-compatibility@1.1.6':
     dependencies:
       '@eslint/eslintrc': 3.1.0
-      '@types/eslint': 9.6.0
+      '@types/eslint': 8.56.11
       '@types/eslint__eslintrc': 2.1.2
-      eslint: 8.57.0
       eslint-define-config: 2.1.0
     transitivePeerDependencies:
       - supports-color
@@ -4592,6 +4592,11 @@ snapshots:
   '@types/debug@4.1.12':
     dependencies:
       '@types/ms': 0.7.34
+
+  '@types/eslint@8.56.11':
+    dependencies:
+      '@types/estree': 1.0.5
+      '@types/json-schema': 7.0.15
 
   '@types/eslint@9.6.0':
     dependencies:
