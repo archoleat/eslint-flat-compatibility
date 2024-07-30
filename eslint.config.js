@@ -1,5 +1,5 @@
 import { defineFlatConfig } from 'eslint-define-config';
-import { extend, config } from '@archoleat/eslint-flat-compatibility';
+import { extend } from '@archoleat/eslint-flat-compatibility';
 
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
@@ -7,7 +7,6 @@ import globals from 'globals';
 import typescriptParser from '@typescript-eslint/parser';
 
 export default defineFlatConfig([
-  config({}),
   ...extend(
     'airbnb-base',
     'airbnb-typescript/base',
@@ -43,6 +42,17 @@ export default defineFlatConfig([
       'import/no-namespace': 'error',
       'import/no-unassigned-import': 'error',
       'import/prefer-default-export': 'off',
+      'unicorn/import-style': [
+        'error',
+        {
+          styles: {
+            'node:path': {
+              default: false,
+              named: true,
+            },
+          },
+        },
+      ],
       'unicorn/no-unused-properties': 'error',
       'unicorn/string-content': 'error',
     },

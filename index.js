@@ -1,1 +1,1 @@
-import t from"node:path";import{FlatCompat as s}from"@eslint/eslintrc";const n=t.resolve(),e=new s({baseDirectory:n,resolvePluginsRelativeTo:n}),i=o=>e.config(o),r=o=>e.env(o),c=(...o)=>e.extends(...o),l=(...o)=>e.plugins(...o);export{i as config,r as env,c as extend,l as plugins};
+import{resolve as n}from"node:path";import{FlatCompat as t}from"@eslint/eslintrc";const e=new t({baseDirectory:n(),resolvePluginsRelativeTo:n()}),s=o=>e.config(o),i=o=>e.env(o),r=(...o)=>e.extends(...o),c=(...o)=>e.plugins(...o);export{s as config,i as env,r as extend,c as plugins};
