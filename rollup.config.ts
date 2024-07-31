@@ -6,9 +6,9 @@ import { minify } from 'rollup-plugin-esbuild';
 import alias from '@rollup/plugin-alias';
 import typescript from '@rollup/plugin-typescript';
 
+const sourceFolder = 'src';
 const fileName = 'index';
-const indexFile = `src/${fileName}.ts`;
-const features = 'src/features';
+const indexFile = `${sourceFolder}/${fileName}.ts`;
 
 export default defineConfig([
   {
@@ -25,11 +25,11 @@ export default defineConfig([
         entries: [
           {
             find: '#features',
-            replacement: `src/features/index.ts`,
+            replacement: `${sourceFolder}/features/${indexFile}`,
           },
           {
             find: '#shared',
-            replacement: `src/shared/index.ts`,
+            replacement: `${sourceFolder}/shared/${indexFile}`,
           },
         ],
       }),

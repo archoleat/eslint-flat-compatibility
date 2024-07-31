@@ -1,6 +1,6 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { config } from '#config';
+import { config } from '#features';
 
 describe('ESLint Flat Config', () => {
   spec('config', () => {

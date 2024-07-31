@@ -1,11 +1,11 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { environments } from '#environments';
+import { env } from '#features';
 
 describe('ESLint Flat Config', () => {
   spec('environments', () => {
     expect(
-      environments({
+      env({
         es2020: true,
         node: true,
       }),
