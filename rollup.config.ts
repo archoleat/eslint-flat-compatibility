@@ -1,3 +1,5 @@
+import { resolve } from 'node:path';
+
 import { defineConfig } from 'rollup';
 
 import { dts } from 'rollup-plugin-dts';
@@ -8,12 +10,13 @@ import typescript from '@rollup/plugin-typescript';
 
 const sourceFolder = 'src';
 const fileName = 'index';
-const indexFile = `${sourceFolder}/${fileName}.ts`;
+const indexFile = `${fileName}.ts`;
 
 export default defineConfig([
   {
+    external: ['@eslint/eslintrc', 'node:path'],
     plugins: [typescript(), minify()],
-    input: indexFile,
+    input: `${sourceFolder}/${indexFile}`,
     output: {
       file: `${fileName}.js`,
       format: 'es',
@@ -25,17 +28,17 @@ export default defineConfig([
         entries: [
           {
             find: '#features',
-            replacement: `${sourceFolder}/features/${indexFile}`,
+            replacement: resolve(`${sourceFolder}/features/${indexFile}`),
           },
           {
             find: '#shared',
-            replacement: `${sourceFolder}/shared/${indexFile}`,
+            replacement: resolve(`${sourceFolder}/shared/${indexFile}`),
           },
         ],
       }),
       dts(),
     ],
-    input: indexFile,
+    input: `${sourceFolder}/${indexFile}`,
     output: {
       file: `${fileName}.d.ts`,
     },
