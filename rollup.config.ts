@@ -9,8 +9,15 @@ import alias from '@rollup/plugin-alias';
 import typescript from '@rollup/plugin-typescript';
 
 const sourceFolder = 'src';
+const featuresFolder = `${sourceFolder}/features`;
+const sharedFolder = `${sourceFolder}/shared`;
+
 const fileName = 'index';
 const indexFile = `${fileName}.ts`;
+const declarationFile = `${fileName}.d.ts`;
+const outputFile = `${fileName}.js`;
+
+const fileFormat = 'es';
 
 export default defineConfig([
   {
@@ -18,8 +25,8 @@ export default defineConfig([
     plugins: [typescript(), minify()],
     input: `${sourceFolder}/${indexFile}`,
     output: {
-      file: `${fileName}.js`,
-      format: 'es',
+      file: outputFile,
+      format: fileFormat,
     },
   },
   {
@@ -28,11 +35,11 @@ export default defineConfig([
         entries: [
           {
             find: '#features',
-            replacement: resolve(`${sourceFolder}/features/${indexFile}`),
+            replacement: resolve(`${featuresFolder}/${indexFile}`),
           },
           {
             find: '#shared',
-            replacement: resolve(`${sourceFolder}/shared/${indexFile}`),
+            replacement: resolve(`${sharedFolder}/${indexFile}`),
           },
         ],
       }),
@@ -40,7 +47,8 @@ export default defineConfig([
     ],
     input: `${sourceFolder}/${indexFile}`,
     output: {
-      file: `${fileName}.d.ts`,
+      file: declarationFile,
+      format: fileFormat,
     },
   },
 ]);
