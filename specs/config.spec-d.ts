@@ -5,11 +5,11 @@ import { Override } from 'eslint-define-config';
 import { config } from '#features';
 
 describe('ESLint Flat Config', () => {
-  spec('define empty config', async () => {
+  spec('empty config', async () => {
     expectTypeOf(config({})).toEqualTypeOf<Override>();
   });
 
-  spec('define config', async () => {
+  spec('config', async () => {
     expectTypeOf(
       config({
         extends: ['airbnb-typescript/base'],

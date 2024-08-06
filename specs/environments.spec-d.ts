@@ -5,7 +5,7 @@ import { Environments } from 'eslint-define-config';
 import { env } from '#features';
 
 describe('ESLint Flat Config', () => {
-  spec('define environments', async () => {
+  spec('environments', async () => {
     expectTypeOf(env({})).toEqualTypeOf<Environments>();
   });
 
