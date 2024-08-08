@@ -19,9 +19,11 @@ const indexFile = `${fileName}.ts`;
 const declarationFile = `${fileName}.d.ts`;
 const outputFile = `${fileName}.js`;
 
+const externalDependencies = ['@eslint/eslintrc', 'node:path'];
+
 export default defineConfig([
   {
-    external: ['@eslint/eslintrc', 'node:path'],
+    external: externalDependencies,
     plugins: [typescript(), minify()],
     input: `${sourceFolder}/${indexFile}`,
     output: {
@@ -30,6 +32,7 @@ export default defineConfig([
     },
   },
   {
+    external: externalDependencies,
     plugins: [
       alias({
         entries: [

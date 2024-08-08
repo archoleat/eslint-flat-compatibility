@@ -10,6 +10,6 @@
     "rootDir": "src",
     "skipLibCheck": true,
     "target": "ESNext",
-    "types": ["eslint", "vitest"]
+    "types": ["eslint", "node", "vitest"]
   }
 }
