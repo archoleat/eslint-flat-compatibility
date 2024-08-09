@@ -12,11 +12,11 @@ const sourceFolder = 'src';
 const featuresFolder = `${sourceFolder}/features`;
 const sharedFolder = `${sourceFolder}/shared`;
 
-const fileName = 'index';
 const fileFormat = 'es';
+const fileName = 'index';
 
-const indexFile = `${fileName}.ts`;
 const declarationFile = `${fileName}.d.ts`;
+const indexFile = `${fileName}.ts`;
 const outputFile = `${fileName}.js`;
 
 const externalDependencies = ['@eslint/eslintrc', 'node:path'];
