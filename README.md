@@ -10,7 +10,7 @@
 ![Editorconfig](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/editorconfig.yaml?label=Editorconfig)
 ![Prettier](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/prettier.yaml?label=Prettier)
 ![ESLint](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/eslint.yaml?label=ESLint)
-![Markdown](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/markdown.yaml?label=Markdown)
+![Remark](https://img.shields.io/github/actions/workflow/status/archoleat/eslint-flat-compatibility/remark.yaml?label=Remark)
 
 ## Table of Contents
 
