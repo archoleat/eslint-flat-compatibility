@@ -11,6 +11,9 @@ importers:
       '@eslint/eslintrc':
         specifier: ^3.1.0
         version: 3.1.0
+      eslint-define-config:
+        specifier: ^2.1.0
+        version: 2.1.0
     devDependencies:
       '@archoleat/commitlint-define-config':
         specifier: ^1.0.9
@@ -72,9 +75,6 @@ importers:
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.0)
-      eslint-define-config:
-        specifier: ^2.1.0
-        version: 2.1.0
       eslint-import-resolver-typescript:
         specifier: ^3.6.1
         version: 3.6.1(@typescript-eslint/parser@7.18.0(eslint@8.57.0)(typescript@5.5.4))(eslint-plugin-import@2.29.1)(eslint@8.57.0)
