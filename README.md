@@ -22,23 +22,7 @@
 ## Installation
 
 ```shell
-# bun
 bun i -D @archoleat/eslint-flat-compatibility
-```
-
-```shell
-# pnpm
-pnpm i -D @archoleat/eslint-flat-compatibility
-```
-
-```shell
-# npm
-npm i -D @archoleat/eslint-flat-compatibility
-```
-
-```shell
-# yarn
-yarn add -D @archoleat/eslint-flat-compatibility
 ```
 
 ## Usage
