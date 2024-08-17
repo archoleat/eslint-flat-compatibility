@@ -6,6 +6,7 @@ import { env } from '#features';
 
 describe('ESLint Flat Config', () => {
   spec('environments', async () => {
+    // @ts-ignore
     expectTypeOf(env({})).toEqualTypeOf<Environments>();
   });
 
@@ -15,6 +16,7 @@ describe('ESLint Flat Config', () => {
         es2020: true,
         node: true,
       }),
+      // @ts-ignore
     ).toEqualTypeOf<Environments>();
   });
 });

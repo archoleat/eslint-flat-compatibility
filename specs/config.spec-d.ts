@@ -6,11 +6,13 @@ import { config } from '#features';
 
 describe('ESLint Flat Config', () => {
   spec('empty config', async () => {
+    // @ts-ignore
     expectTypeOf(config({})).toEqualTypeOf<Override>();
   });
 
   spec('config', async () => {
     expectTypeOf(
+      // @ts-ignore
       config({
         extends: ['airbnb-typescript/base'],
         plugins: ['unicorn'],
@@ -22,6 +24,7 @@ describe('ESLint Flat Config', () => {
           semi: 'error',
         },
       }),
+      // @ts-ignore
     ).toEqualTypeOf<Override>();
   });
 });
