@@ -30,28 +30,6 @@ bun i -D @archoleat/eslint-flat-compatibility
 ### Before
 
 ```js
-import { resolve } from 'node:path';
-
-import { defineFlatConfig } from 'eslint-define-config';
-import { FlatCompat } from '@eslint/eslintrc';
-
-const compat = new FlatCompat({
-  baseDirectory: resolve(),
-  resolvePluginsRelativeTo: resolve(),
-});
-
-export default defineFlatConfig([
-  ...compat.extends(
-    'airbnb-typescript/base',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-  ),
-// ...
-```
-
-or
-
-```js
 import { fileURLToPath } from 'url';
 import path from 'path';
 
@@ -76,22 +54,6 @@ export default defineFlatConfig([
 ```
 
 ## After
-
-```js
-import { defineFlatConfig } from 'eslint-define-config';
-import { extend } from '@archoleat/eslint-flat-compatibility';
-
-export default defineFlatConfig([
-  // Mimic extends
-  ...extend(
-    'airbnb-typescript/base',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
-  ),
-// ...
-```
-
-Also available:
 
 ```js
 import { config, env, extend, plugins } from '@archoleat/eslint-flat-compatibility';
