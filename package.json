@@ -70,7 +70,7 @@
     "eslint-define-config": "^2.1.0"
   },
   "devDependencies": {
-    "@archoleat/commitlint-define-config": "^1.0.9",
+    "@archoleat/commitlint-define-config": "^1.0.10",
     "@archoleat/eslint-flat-compatibility": "file:",
     "@archoleat/prettier-define-config": "^1.0.1",
     "@archoleat/semantic-release-define-config": "^1.1.14",
