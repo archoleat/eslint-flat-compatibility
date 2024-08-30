@@ -2,7 +2,7 @@ import { describe, expectTypeOf, test as spec } from 'vitest';
 
 import { Override } from 'eslint-define-config';
 
-import { config } from '#features';
+import { config } from '#features/config.ts';
 
 describe('ESLint Flat Config', () => {
   spec('empty config', async () => {

@@ -36,8 +36,8 @@
   "type": "module",
   "types": "index.d.ts",
   "imports": {
-    "#features": "./src/features/index.ts",
-    "#shared": "./src/shared/index.ts"
+    "#compatibility": "./src/shared/compatibility.ts",
+    "#features/*": "./src/features/*"
   },
   "exports": {
     ".": "./index.js"

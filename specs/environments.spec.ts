@@ -2,17 +2,17 @@ import { describe, expectTypeOf, test as spec } from 'vitest';
 
 import { Environments } from 'eslint-define-config';
 
-import { env } from '#features';
+import { environments } from '#features/environments.ts';
 
 describe('ESLint Flat Config', () => {
   spec('environments', async () => {
     // @ts-ignore
-    expectTypeOf(env({})).toEqualTypeOf<Environments>();
+    expectTypeOf(environments({})).toEqualTypeOf<Environments>();
   });
 
   spec('environments', async () => {
     expectTypeOf(
-      env({
+      environments({
         es2020: true,
         node: true,
       }),

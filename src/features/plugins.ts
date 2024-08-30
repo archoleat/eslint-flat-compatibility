@@ -1,4 +1,4 @@
-import { compatibility } from '#shared';
+import { compatibility } from '#compatibility';
 
 /**  @return mimic plugins */
 const plugins = (...array: string[]) => compatibility.plugins(...array);

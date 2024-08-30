@@ -14,8 +14,7 @@
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "paths": {
-      "#features": ["./src/features/index.ts"],
-      "#shared": ["./src/shared/index.ts"]
+      "#compatibility": ["./src/shared/compatibility.ts"]
     },
     "rootDir": "src",
     "types": ["node", "vitest"],
