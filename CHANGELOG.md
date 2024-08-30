@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.1.8](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.7...v1.1.8) (2024-08-30)
+
+### Bug Fixes
+
+* **eslint-config:** add `files` option ([#65](https://github.com/archoleat/eslint-flat-compatibility/issues/65)) ([268d34e](https://github.com/archoleat/eslint-flat-compatibility/commit/268d34eab646709624c51a0ce333b815c5b7112f))
+
+### Code Refactoring
+
+* eslint ([#64](https://github.com/archoleat/eslint-flat-compatibility/issues/64)) ([218ec87](https://github.com/archoleat/eslint-flat-compatibility/commit/218ec874d33482d7a4ee01480177c5bcb2991737))
+* move scripts to ci ([#57](https://github.com/archoleat/eslint-flat-compatibility/issues/57)) ([92e383b](https://github.com/archoleat/eslint-flat-compatibility/commit/92e383bc514cc9b0192cd75fc7edaa1d34dd49fb))
+* **prettierignore:** remove `.czrc` ([#60](https://github.com/archoleat/eslint-flat-compatibility/issues/60)) ([946479a](https://github.com/archoleat/eslint-flat-compatibility/commit/946479a023db5a55f073374c836c4c74fc0e964c))
+* remove index files ([#66](https://github.com/archoleat/eslint-flat-compatibility/issues/66)) ([ad81dbe](https://github.com/archoleat/eslint-flat-compatibility/commit/ad81dbeb8bf67eebb0567028807bcfe092b597e8))
+
+### Documentation
+
+* **readme:** remove extra code blocks ([#58](https://github.com/archoleat/eslint-flat-compatibility/issues/58)) ([178a8ce](https://github.com/archoleat/eslint-flat-compatibility/commit/178a8ce93e6f7fc8ce4a10385b759d57f4e6ebab))
+* **readme:** remove extra scripts ([#54](https://github.com/archoleat/eslint-flat-compatibility/issues/54)) ([4839c95](https://github.com/archoleat/eslint-flat-compatibility/commit/4839c9556db26f87acc7bb551d8d5d0c754d031a))
+
 ## [1.1.7](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.6...v1.1.7) (2024-08-17)
 
 ### Code Refactoring
