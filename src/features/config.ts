@@ -1,9 +1,8 @@
 import { Override } from 'eslint-define-config';
 
-import { compatibility } from '#shared';
+import { compatibility } from '#compatibility';
 
 /**  @return entire config */
-// @ts-ignore
 const config = (object: Override) => compatibility.config(object);
 
 export { config };

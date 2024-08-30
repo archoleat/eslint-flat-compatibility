@@ -1,6 +1,6 @@
 import { describe, expect, test as spec } from 'vitest';
 
-import { extend } from '#features';
+import { extend } from '#features/extends.ts';
 
 describe('ESLint Flat Config', () => {
   spec('extends', async () => {

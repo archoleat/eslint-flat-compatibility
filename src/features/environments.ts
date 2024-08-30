@@ -1,9 +1,8 @@
 import { Environments } from 'eslint-define-config';
 
-import { compatibility } from '#shared';
+import { compatibility } from '#compatibility';
 
 /**  @return mimic env */
-// @ts-ignore
 const environments = (object: Environments) => compatibility.env(object);
 
 export { environments };
