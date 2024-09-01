@@ -53,7 +53,7 @@ export default defineFlatConfig([
 // ...
 ```
 
-## After
+### After
 
 ```js
 import { config, env, extend, plugins } from '@archoleat/eslint-flat-compatibility';
@@ -68,7 +68,6 @@ export default defineFlatConfig([
   ),
 
   // Mimic env
-  // Types available
   ...env({
     es2020: true,
     node: true,
@@ -78,7 +77,6 @@ export default defineFlatConfig([
   ...plugins('airbnb', 'react'),
 
   // Translate an entire config
-  // Types available
   ...config({
     env: {
       es2020: true,
