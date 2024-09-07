@@ -11,7 +11,7 @@
   "homepage": "https://github.com/archoleat/eslint-flat-compatibility#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/archoleat/eslint-flat-compatibility.git"
+    "url": "git+https://github.com/archoleat/eslint-flat-compatibility.git"
   },
   "bugs": {
     "url": "https://github.com/archoleat/eslint-flat-compatibility/issues"
