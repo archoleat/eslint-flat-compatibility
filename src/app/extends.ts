@@ -1,4 +1,4 @@
-import { compatibility } from '#compatibility';
+import { compatibility } from '#shared';
 
 /** @return mimic extends */
 const extend = (...array: string[]) => compatibility.extends(...array);
