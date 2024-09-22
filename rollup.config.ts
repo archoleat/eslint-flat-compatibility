@@ -9,15 +9,15 @@ import alias from '@rollup/plugin-alias';
 import typescript from '@rollup/plugin-typescript';
 
 const sourceFolder = 'src';
+const appFolder = `${sourceFolder}/app`;
+const sharedFolder = `${sourceFolder}/shared`;
 
 const fileFormat = 'es';
-const entryFileName = 'app';
-const outputFileName = 'index';
+const fileName = 'index';
 
-const compatibilityFile = `${sourceFolder}/shared/compatibility.ts`;
-const declarationFile = `${outputFileName}.d.ts`;
-const entryFile = `${entryFileName}.ts`;
-const outputFile = `${outputFileName}.js`;
+const declarationFile = `${fileName}.d.ts`;
+const entryFile = `${fileName}.ts`;
+const outputFile = `${fileName}.js`;
 
 const externalDependencies = ['@eslint/eslintrc', 'node:path'];
 
@@ -37,8 +37,12 @@ export default defineConfig([
       alias({
         entries: [
           {
-            find: '#compatibility',
-            replacement: resolve(compatibilityFile),
+            find: '#app',
+            replacement: resolve(`${appFolder}/${entryFile}`),
+          },
+          {
+            find: '#shared',
+            replacement: resolve(`${sharedFolder}/${entryFile}`),
           },
         ],
       }),
