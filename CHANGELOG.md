@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.9](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.8...v1.1.9) (2024-09-22)
+
+### Code Refactoring
+
+* **package:** add `git+` ([#72](https://github.com/archoleat/eslint-flat-compatibility/issues/72)) ([a9bd259](https://github.com/archoleat/eslint-flat-compatibility/commit/a9bd259b2ddefdac03bd63e1541a423eb01c6883))
+* **prettier:** remove json override ([#73](https://github.com/archoleat/eslint-flat-compatibility/issues/73)) ([879ce9e](https://github.com/archoleat/eslint-flat-compatibility/commit/879ce9ed52a8fd2f75809774366f5d0d9e6c92b8))
+* specs ([#74](https://github.com/archoleat/eslint-flat-compatibility/issues/74)) ([727330c](https://github.com/archoleat/eslint-flat-compatibility/commit/727330c16948f3dad250b1e0bb28e949bb633413))
+
+### Documentation
+
+* **readme:** update ([#69](https://github.com/archoleat/eslint-flat-compatibility/issues/69)) ([85099fe](https://github.com/archoleat/eslint-flat-compatibility/commit/85099feb80c5cf8a481d7e894f78f615456bade6))
+
 ## [1.1.8](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.7...v1.1.8) (2024-08-30)
 
 ### Bug Fixes
