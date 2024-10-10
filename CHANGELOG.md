@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.0](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.9...v1.2.0) (2024-10-10)
+
+### Features
+
+* add `funding.yaml` ([#75](https://github.com/archoleat/eslint-flat-compatibility/issues/75)) ([ee37adc](https://github.com/archoleat/eslint-flat-compatibility/commit/ee37adc311ec09e38f772021ae782c15cbf239ae))
+
+### Code Refactoring
+
+* move build script to `release.yaml` ([#76](https://github.com/archoleat/eslint-flat-compatibility/issues/76)) ([1b4d119](https://github.com/archoleat/eslint-flat-compatibility/commit/1b4d1199e9a633605fb953033657e7a48b5bafd4))
+
 ## [1.1.9](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.8...v1.1.9) (2024-09-22)
 
 ### Code Refactoring
