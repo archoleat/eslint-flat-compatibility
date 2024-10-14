@@ -54,7 +54,6 @@ describe('ESLint Flat Config', async () => {
           semi: 'error',
         },
       }),
-      // @ts-ignore
     ).toEqualTypeOf<Override>();
   });
 });
