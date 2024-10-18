@@ -1,8 +1,7 @@
 import { describe, expectTypeOf, test as spec } from 'vitest';
+import type { Override } from 'eslint-define-config';
 
 import { config } from '#index';
-
-import type { Override } from 'eslint-define-config';
 
 describe('ESLint Flat Config', async () => {
   spec('should return empty config', async () => {
