@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.1](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.2.0...v1.2.1) (2024-10-25)
+
+### Code Refactoring
+
+* small changes ([#77](https://github.com/archoleat/eslint-flat-compatibility/issues/77)) ([146ea66](https://github.com/archoleat/eslint-flat-compatibility/commit/146ea668f01596bcd143e2db45721a876ac2a28f))
+
 ## [1.2.0](https://github.com/archoleat/eslint-flat-compatibility/compare/v1.1.9...v1.2.0) (2024-10-10)
 
 ### Features
